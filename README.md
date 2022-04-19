@@ -42,3 +42,15 @@ echo 'export ALCHEMY='$ALCHEMY >> $HOME/.bash_profile
 ```{bash}
 wget -O starknet.sh https://api.nodes.guru/starknet.sh && chmod +x starknet.sh && ./starknet.sh
 ```
+-----------------------------------------------------------------------------------------------
+<h1 align="center">Дополнительно<h1>
+
+Просмотр логов ноды
+```{bash}
+journalctl -u starknetd -f
+```
+
+Рестарт ноды
+```{bash}
+systemctl restart starknetd
+```
