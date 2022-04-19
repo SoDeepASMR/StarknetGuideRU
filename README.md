@@ -50,6 +50,11 @@ wget -O starknet.sh https://api.nodes.guru/starknet.sh && chmod +x starknet.sh &
 journalctl -u starknetd -f
 ```
 
+Статус демона ноды
+```{bash}
+systemctl status starknetd
+```
+
 Рестарт ноды
 ```{bash}
 systemctl restart starknetd
